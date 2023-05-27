@@ -36,6 +36,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open" data-menu-open>
+                <svg class="mobile-menu-open-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
             <!-- Contact information -->
             <address class="contacts">
                 <ul class="contact-list list">
@@ -48,19 +53,83 @@
                 </ul>
             </address>
         </div>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu is-open" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close-btn" type="button" data-menu-close>
+                    <svg class="mobile-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+
+                <nav class="mobile-page-nav">
+                    <!-- Pages -->
+                    <ul class="mobile-menu-list list">
+                        <li class="mobile-menu-item">
+                            <a class="menu-link link current-nav-link" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="menu-link link " href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="menu-link link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Contact information -->
+                <address class="mobile-contacts">
+                    <ul class="mobile-contact-list list">
+                        <li class="mobile-contact-list-item">
+                            <a class="contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="mobile-contact-list-item ">
+                            <a class="contact-item phone link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+
+                <!-- SOCIAL LIST -->
+                <ul class="list mobile-social-list">
+                    <li class="social-list-item">
+                        <a class="social-list-link link" href=""><svg class="social-list-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li class="mobile-social-list-item">
+                        <a class="social-list-link link" href=""><svg class="social-list-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li class="mobile-social-list-item">
+                        <a class="social-list-link link" href=""><svg class="social-list-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li class="mobile-social-list-item">
+                        <a class="social-list-link link" href=""><svg class="social-list-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
     </header>
 
     <main>
         <!-- Hero Section-->
-        <section class="hero hero-background">
+        <!-- <section class="hero hero-background">
             <div class="container hero-container">
                 <h1 class="main-title">Effective Solutions for Your Business</h1>
                 <button data-modal-open class="modal-btn" type="button">Order Service</button>
             </div>
-        </section>
+        </section> -->
 
         <!-- Features Section -->
-        <section class="features section">
+        <!-- <section class="features section">
             <div class="container">
                 <h2 class="visually-hidden">Services</h2>
                 <ul class="list features-section-list">
@@ -104,9 +173,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Main Projects Section -->
-        <section class="projects-section section">
+        <!-- <section class="projects-section section">
             <div class="container">
                 <h2 class="main-projects-header">What are we doing</h2>
                 <ul class="list projects-section-list">
@@ -124,9 +193,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Team Section -->
-        <section class="team-section section">
+        <!-- <section class="team-section section">
             <div class="container">
                 <h2 class="team-header">Our Team</h2>
                 <ul class="list team-section-list">
@@ -269,10 +338,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Customers Section -->
-        <section class="section customers-section">
+        <!-- <section class="section customers-section">
             <div class="container customers-container">
                 <h2 class="customers-header">Customers</h2>
                 <ul class="customers-list">
@@ -302,15 +371,15 @@
                             </svg></a></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
+    <!-- <footer class="footer">
+        <div class="container footer-container"> -->
 
-            <!-- LOGO -->
-            <div class="logo-footer-container">
+    <!-- LOGO -->
+    <!-- <div class="logo-footer-container">
                 <a class="logo link logo-footer-link" href="./index.html">Web<span
                         class="logo-theme-light">Studio</span>
                 </a>
@@ -319,10 +388,10 @@
                     growth
                     solutions.
                 </p>
-            </div>
+            </div> -->
 
-            <!-- SOCIAL MEDIA -->
-            <div class="footer-social-container">
+    <!-- SOCIAL MEDIA -->
+    <!-- <div class="footer-social-container">
                 <p class="social-footer-header">Social media</p>
                 <ul class="list footer-social-list">
                     <li class="social-list-item">
@@ -350,10 +419,10 @@
                             </svg></a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
-            <!-- SUBSCRIPTION -->
-            <div class="footer-subscription-container">
+    <!-- SUBSCRIPTION -->
+    <!-- <div class="footer-subscription-container">
                 <p class="footer-form-header">Subscribe</p>
                 <form class="footer-form">
                     <label for="email" class="footer-form-field">
@@ -368,23 +437,23 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- MODAL WINDOW -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="modal-close-btn" type="button">
                 <svg class="modal-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
-            <p class="modal-form-header">Leave your contacts and we will call you back</p>
+            <p class="modal-form-header">Leave your contacts and we will call you back</p> -->
 
-            <!-- MODAL FORM -->
-            <form class="modal-form">
+    <!-- MODAL FORM -->
+    <!-- <form class="modal-form"> -->
 
-                <!-- NAME -->
-                <div class="modal-form-item">
+    <!-- NAME -->
+    <!-- <div class="modal-form-item">
                     <label class="modal-form-field" for="user-name">Name</label>
                     <div class="modal-form-input-wrapper">
                         <input type="text" id="user-name" name="user-name" class="modal-form-input" required
@@ -393,10 +462,10 @@
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- PHONE -->
-                <div class="modal-form-item">
+    <!-- PHONE -->
+    <!-- <div class="modal-form-item">
                     <label class="modal-form-field" for="user-phone">Phone</label>
                     <div class="modal-form-input-wrapper">
                         <input type="tel" id="user-phone" name="user-phone" class="modal-form-input" required
@@ -405,10 +474,10 @@
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- EMAIL -->
-                <div class="modal-form-item">
+    <!-- EMAIL -->
+    <!-- <div class="modal-form-item">
                     <label class="modal-form-field" for="user-email">Email</label>
                     <div class="modal-form-input-wrapper">
                         <input type="email" id="user-email" name="user-email" class="modal-form-input" required
@@ -417,10 +486,10 @@
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- COMMENT -->
-                <div class="modal-form-comment-wrapper">
+    <!-- COMMENT -->
+    <!-- <div class="modal-form-comment-wrapper">
                     <label class="modal-form-field" for="user-comment">Comment</label>
                     <textarea name="user-comment" class="modal-form-message" placeholder="Text input"
                         id="user-comment"></textarea>
@@ -439,13 +508,10 @@
                 <button type="submit" class="modal-form-submit-btn">Send</button>
             </form>
         </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
