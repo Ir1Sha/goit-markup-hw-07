@@ -100,7 +100,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 428px-768px*/
+/*768px-1157px*/
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -127,7 +127,7 @@ img {
 /* 0-428px */
 @media screen and (min-width: 428px) {
   .container {
-    width: 396px;
+    width: 428px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -161,7 +161,9 @@ img {
 /* ====== MOBILE ====== */
 
 .page-header {
+  display: flex;
   align-items: center;
+  justify-content: center;
   border-bottom: 1px solid var(--border-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -169,12 +171,12 @@ img {
   padding-bottom: 24px;
 }
 
-.page-header-container {
-  display: flex;
-  align-items: center;
-}
-
 @media screen and (max-width: 767px) {
+  .page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .mobile-menu-open {
     stroke: var(--brand-dark-color);
     background-color: transparent;
@@ -192,6 +194,7 @@ img {
     left: 0;
     z-index: 1000;
     background-color: var(--mobile-background);
+    overflow: scroll;
 
     opacity: 0;
     visibility: hidden;
@@ -262,6 +265,10 @@ img {
     color: var(--menu-links-accent);
   }
 
+  .mobile-contacts {
+    font-style: normal;
+  }
+
   .mobile-contact-list {
     display: flex;
     flex-direction: column-reverse;
@@ -271,23 +278,27 @@ img {
     margin-bottom: 48px;
   }
 
-  .contact-item,
-  .contact-item {
+  .contact-item.phone {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--links-accent-color);
+  }
+
+  .contact-item.email {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .contact-item.phone {
-    color: var(--links-accent-color);
   }
 
   .mobile-social-list {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 56px;
   }
 
@@ -331,6 +342,8 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .page-header-container {
     position: relative;
+    display: flex;
+    align-items: center;
   }
 
   .contacts {
@@ -403,8 +416,8 @@ img {
 
   .contact-item,
   .contact-item {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -413,7 +426,13 @@ img {
 /* ===============/TABLET ===================== */
 /* ================================================================================== */
 /* =============== DESCTOP ==================== */
-
+@media screen and (min-width: 1158px) {
+  .page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /* ====== NAVIGATION====== */
 
 @media screen and (min-width: 1158px) {
@@ -503,6 +522,8 @@ img {
   background-position: center;
   background-color: var(--brand-dark-color);
   margin: 0 auto;
+  padding: 112px 0;
+  max-width: 428px;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -519,10 +540,6 @@ img {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-}
-
-.hero-container {
-  padding: 112px 54px;
 }
 
 .main-title {
@@ -578,15 +595,16 @@ img {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/tablet/hero/bg-tablet@2x.jpg');
+    padding: 112px 136px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .hero {
     max-width: 1157px;
-  }
-  .hero-container {
-    padding: 112px 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -606,21 +624,21 @@ img {
 /* ================================================================================== */
 
 /* =============== DESCTOP ===============*/
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/desctop/hero/bg-desctop@2x.jpg');
+  }
+}
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 100vw;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/desctop/hero/bg-desctop-1x.jpg');
-  }
-
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
-    screen and (min-resolution: 192dpi) and (min-width: 1158px),
-    screen and (min-resolution: 2dppx) and (min-width: 1158px) {
-    .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('../images/desctop/hero/bg-desctop@2x.jpg');
-    }
   }
 
   .hero-container {
@@ -786,8 +804,6 @@ img {
 
 /* ============================= MAIN PROJECTS SECTION ===========================*/
 
-/* ================ DESCTOP ================= */
-
 /* ===== Mobile and Tablet ====== */
 @media screen and (max-width: 1157px) {
   .projects-section {
@@ -795,6 +811,8 @@ img {
   }
 }
 /* ===== /Mobile and Tablet ====== */
+
+/* ================ DESCTOP ================= */
 @media screen and (min-width: 1158px) {
   .projects-section {
     padding-bottom: 120px;
@@ -828,7 +846,7 @@ img {
 
 @media screen and (max-width: 1157px) {
   .team-section {
-    padding-top: 96px;
+    padding: 96px 0;
   }
 }
 
@@ -945,16 +963,17 @@ img {
 
 /* ================ DESCTOP ================= */
 
-.team-section {
-  padding: 120px 0;
-}
+@media screen and (min-width: 1158px) {
+  .team-section {
+    padding: 120px 0;
+  }
 
-.team-section-list {
-  align-content: center;
-  flex-basis: auto;
-  gap: 24px;
+  .team-section-list {
+    align-content: center;
+    flex-basis: auto;
+    gap: 24px;
+  }
 }
-
 /* ================ /DESCTOP ================= */
 /* ======================== /MAIN TEAM SECTION ======================== */
 
@@ -972,7 +991,7 @@ img {
   }
 
   .customers-list-item {
-    width: calc((100% - 32px) / 2);
+    width: 190px;
     height: 88px;
   }
 }
@@ -1029,7 +1048,7 @@ img {
   }
 
   .customers-list-item {
-    width: calc((100% - 72px) / 3);
+    width: 168px;
     height: 88px;
   }
 }
@@ -1327,8 +1346,9 @@ img {
 }
 
 .footer-subscription-container {
+  width: 100%;
   display: block;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .footer-form {
@@ -1399,7 +1419,7 @@ img {
     resize: none;
     outline: none;
     background-color: transparent;
-    width: 398px;
+    width: 100%;
     height: 40px;
     border: none;
     border: 1px solid var(--modal-form-light);
@@ -1413,10 +1433,7 @@ img {
   }
 
   .footer-form-field {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
   }
 }
 /* ======== /MOBILE ======== */
@@ -1451,8 +1468,7 @@ img {
   .footer-form {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    justify-content: start;
   }
 
   .footer-form-field {
